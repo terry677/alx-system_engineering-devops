@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Fix a bug in webstack debugging project
+
+rm /etc/nginx/sites-enabled/default
+cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+service nginx start
